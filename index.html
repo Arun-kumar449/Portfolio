@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="logo2.png" class="logo">
+            <ul>
+                <li><a href="#aboutMe">ABOUT ME</a></li>
+                <li><a href="#Education-info">EDUCATION</a></li>
+                <li><a href="#project-info">PROJECTS</a></li>
+                <li><a href="#mycertificates">CERTIFICATES</a></li>
+                <li><a href="#contact-ak">CONTACT</a></li>
+            </ul>   
+        </div>
+
+        <div class="info">
+            <h3>Hello,my name is</h3>
+            <h1>Arun <span>Kumar</span></h1>
+            <h3>I'am a Full Stack Developer</h3>
+            <a type="pdf" href="CV1.pdf">Download CV</a>
+        </div>
+    </div>
+
+    <!------------------------About me------------------------------------------------>
+    <section class="about" id="aboutMe">
+        <div class="personal">
+            <img src="Pic2.jpg" alt="Pic1">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Full Stack Developer</h5>
+                <p>"I'm a passionate Full Stack Developer, adept at crafting seamless user
+                     experiences and building robust server-side solutions. With a strong 
+                     foundation in HTML, CSS, and JavaScript for front-end design, and expertise 
+                     in back-end development and database architecture, I bring web projects to
+                      life from concept to execution. I thrive on continuous learning and innovative
+                       problem-solving. Let's collaborate and turn your digital visions into reality 
+                       with a focus on user-friendly, responsive, and cutting-edge technology."
+                </p>
+                <button id="goBackButton">Go Back</button>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+            </div>
+        </div>
+    </section>
+     <!------------------Education-------------------------------------------->
+
+     
+     <section class="Education" id="Education-info">
+     <div class="education">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(bgedu.avif);
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color:rgb(191, 142, 77);
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+
+        .education h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .education-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .education-item {
+            background-color: #b3cfe0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 45%;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            color: #333333;
+            margin: 10px 0;
+        }
+
+        .go-back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+    <div class="container">
+        <h1>Education Details</h1>
+        <div class="education-info">
+            <div class="education-item">
+                <h2>BE/BTECH</h2>
+                <p>Basaveshwar Engineering College Bagalkot <br>Electronics and Communication<br> (Visvesvaraya Technological University)</p>
+                <p>Year of Passing: 2023</p>
+            </div>
+            <div class="education-item">
+                <h2>PUC</h2>
+                <p>Sahyadri PU Science College Yadgir</p>
+                <p>Year of Passing: 2019</p>
+            </div>
+        </div><br><br>
+        <center>
+            <div class="education-item">
+                <h2>SSLC</h2>
+                <p>Mahatma Gandhi English Medium School Yadgir</p>
+                <p>Year of Passing: 2017</p>
+            </div>
+            <a href="index.html"><button class="go-back-button" onclick="goBack()">Go Back</button></a>
+        </center>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </div>
+</section>
+
+    <!-----------------Projects------------------------------------------------>
+
+    <section class="Projects" id="project-info">
+    <div class="projects">
+    <style>
+        .projects body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+
+        .projects {
+            background-image: url(projbg.jpg);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container1 {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .main1 {
+            padding: 2rem;
+        }
+
+        .projbg h2{
+            background-color: aqua;
+        }
+
+        .main1 p {
+            color: black;
+            background-color: wheat;
+        }
+
+
+        .project-image {
+            width: 85%;
+            max-height: 400px;
+            object-fit: fill;
+            border: 2px solid #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #goBackButton {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #goBackButton:hover {
+            background-color: #333;
+        }
+
+
+    </style>
+
+
+
+    <header>
+        <h1>My Project</h1>
+    </header>
+
+    <div class="container1">
+        <div class="main1">
+        <div class="projbg">
+        <h2>“AUTOMATIC PARKING SYSTEM USING IR SENSOR”</h2>
+        <p  background-color: aqua;>• This automatic Parking System using IR sensor was able to perform its function
+            such as detect the presence or absence of a vehicle, display the availability status
+            of parking slot and store the data of IR sensor into the database. <br>
+            • Based on the results obtained, it was proven that the proposed parking system
+            using IR sensor was a good idea and a great system to develop, and it indicates
+            that the respondents were positively accepted the proposed parking system in
+            order to minimize and reduce the problem for parking of vehicles, especially the
+            time being wasted in searching for the available parking spaces.
+        </p>
+
+        <center><img class="project-image" src="projmini.jpg" alt="Project Image"></center>
+
+         <br>
+         <br>
+         <br>
+
+         <h2>“EFFICIENT INFORMATION MANAGEMENT IN AGRICULTURE USING IOT”</h2>
+         <p  background-color: aqua;>• Efficient information management is critical for modern agriculture, and the Internet of Things
+            (IoT) has revolutionized the way agricultural operations are managed. Data gathering can extend
+            the lifetime of sensor nodes in WSNs by minimizing redundant data transmission. In this case,
+            data combination presents an important method for reducing the amount of redundant data,
+            reducing the number of transmissions, and minimizing the power consumption of the nodes in
+            the network. Data merging can be accomplished along a route starting from sensor nodes to sink
+            nodes. Gathering data in agricultural applications, including humidity, weather,temperature, and
+            soil moisture, can minimize the power consumption of environment sensor nodes by spatially
+            correlating the field and redundant data of the sensor nodes when the temperature does not
+            change significantly, especially during night time. <br>
+             So, we have come up with a solution to efficiently gather or collect the information with
+            different schemes and techniques implemented using IoT. They are: <br>
+            <b>Data aggregation:</b> Data aggregation involves combining multiple data points into a single data
+            point. This can help to reduce the amount of data being transmitted to the cloud. For example,
+            instead of sending the soil moisture level of each plant in a field, the average soil moisture level
+            of the field can be sent. <br>
+            <b>Data filtering:</b> Data filtering involves sending the data only when there is change in the data.
+            This can help to reduce the amount of data being transmitted to the cloud. For example,
+            transferring the data only when there is a significant change in the data. <br>
+            <b>Data sampling:</b> data sampling involves collecting data at a lower frequency to reduce the
+            amount of data being transmitted to the cloud. For example, instead of collecting data every
+            minute, data can be collected every 5 or 10 minutes.
+         </p>
+         <center><img class="project-image" src="projmaj2.jpg" alt="Project Image"></center>
+
+         <br>
+         <br>
+         <br>
+
+
+        <h2>"Course Registration Portal"</h2>
+            <p>The Course Registration Portal is a user-friendly web application designed to simplify 
+            the process of student registration. It provides a convenient platform for students to enter
+            their personal and educational details securely. This portal streamlines the registration
+            process for educational institutions, making it easier for them to collect and manage student information.
+            </p>
+
+            <center><img class="project-image" src="projstud1.png" alt="Project Image"></center>
+            <a href="index.html"><button id="goBackButton">Go Back</button></a>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!--------------------------------Certificates------------------------------------------------------>
+
+
+<section class="cerificates" id="mycertificates">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .certibg {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(projbg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container2 {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(110, 92, 47);
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .container2 h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .container2 .certificate-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container2.certificate-item img {
+            width: 550px; /* Adjust */
+            height: 650px; /* Adjus*/
+            object-fit: cover;
+            border-radius: 5px;
+            object-fit: fill;
+            border: 2px solid #242424;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        }
+
+        .container2.go-back-button {
+            background-color: #827e87;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .container2.go-back-button:hover {
+            background-color: #4c4a4a;
+        }
+    </style>
+</head>
+
+<div class="certibg">
+    <div class="container2">
+        <h1>My Certificates</h1>
+        <div class="certificates">
+
+            <div class="certificate-item">
+                <img src="BEdegree.jpg" alt="Certificate 1">
+                <p><strong>Certificate 1</strong></p>
+            </div>
+
+                
+            <div class="certificate-item">
+                <img src="puc.jpg" alt="Certificate 2">
+                <p><strong>Certificate 2</strong></p>
+            </div>
+
+
+            <div class="certificate-item">
+                <img src="sslc.jpg" alt="Certificate 3">
+                <p><strong>Certificate 3</strong></p>
+            </div>
+
+            <div class="certificate-item">
+                <img src="Internship.jpg" alt="Certificate 4">
+                <p><strong>Certificate 4</strong></p>
+            </div>
+
+        </div>
+        <center>
+           <a href="index.html"><button class="go-back-button" onclick="goBack()">Go Back</button></a> 
+        </center>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</div>
+</section>
+
+
+
+    <!----------------Contact Me----------------------------------------------->
+    <section class="contact-AK" id="contact-ak">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=">
+            <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+            
+     <style>
+     .contact-AK body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(contbg.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      
+      
+      section {
+        position: relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .container4 {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      
+      .section-header {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      
+      .section-header h2 {
+        color: #FFF;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+      
+      .section-header p {
+        color: #FFF;
+      }
+      
+      .row  {
+        display: flex;
+        flwx-wrap : wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .contact-info {
+        width: 50%;
+    }
+      .contact-form{
+        height: auto;
+        width: 500px;
+      }
+       
+      .contact-info-icon {
+        height: 70px;
+        width: 70px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 50%;
+      }
+      
+      .contact-info-icon i {
+        font-size: 30px;
+        line-height: 70px;
+      }
+      
+      .contact-info-content {
+        margin-left: 20px;
+      }
+      
+      .contact-info-content h4 {
+        color: #1da9c0;
+        font-size: 1.4em;
+        margin-bottom: 5px;
+      }
+      
+      .contact-info-content p {
+        color: #FFF;
+        font-size: 1em;
+      }
+      
+      .contact-form {
+        background-color: #fff;
+        padding: 40px;
+        width: 45%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      
+      .contact-form h2 {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      .contact-form .input-box {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+      
+      .contact-form .input-box input,
+      .contact-form .input-box textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+      }
+      
+      .contact-form .input-box span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      }
+      
+      .contact-form .input-box input:focus ~ span,
+      .contact-form .input-box textarea:focus ~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+      }
+      
+      .contact-form .input-box input[type="submit"]
+      {
+        width: 100%;
+        background: #00bcd4;
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #00bcd4;
+        transition: 0.5s;
+      }
+      
+      .contact-form .input-box input[type="submit"]:hover
+      {
+        background: #FFF;
+        color: #00bcd4;
+      }
+      
+      @media (max-width: 991px) {
+        section {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        
+        .row {
+          flex-direction: column;
+        }
+        
+        .contact-info {
+          margin-bottom: 40px;
+          width: 100%;
+        }
+        
+        .contact-form {
+          width: 100%;
+        }
+      }
+      </style>
+     </head> 
+
+        <div class="section-header">
+          <div class="container4">
+            <h2>Contact Us</h2>
+            <p>"Have a project in mind or just want to chat about all things tech? I'm here to listen and create. <br>
+                 Get in touch,and let's transform your vision into a functional masterpiece."</p>
+          </div>
+        </div>
+        
+        <div class="container4">
+          <div class="row">
+            
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  <h4>Address</h4>
+                  <p>2nd block Prakash Nagar<br/> Rajajinagar, Bangalore, <br/>560010</p>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  <h4>Phone</h4>
+                  <p>8431607501</p>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa fa-instagram"></i>
+                </div>
+                
+                <div class="contact-info-content">
+                  
+                 <a href="https://instagram.com/arun_kumar_2222?igshid=OGQ5ZDc2ODk2ZA=="><h4>Instagram</h4></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-form">
+              <form action="https://formspree.io/f/mwkdayvk" method="POST" id="contact-form">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                  <input type="text" required="true" name="username">
+                  <span>Full Name</span>
+                </div>
+                
+                <div class="input-box">
+                  <input type="email" required="true" name="email">
+                  <span>Email</span>
+                </div>
+                
+                <div class="input-box">
+                  <textarea required="true" name="comment"></textarea>
+                  <span>Type your Message...</span>
+                </div>
+                
+                <div class="input-box">
+                  <input type="submit" value="Send" name="submit">
+                </div>
+              </form>
+            </div>
+            <center><a href="index.html"><button id="goBackButton">Go Back</button></a></center>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+            
+          </div>
+        </div>
+    </section> 
+   
+</body>
+</html>
